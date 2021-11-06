@@ -18,9 +18,9 @@ spec:
     spec:
       containers:
       - name: appka
-        image: akka-sample-cluster-kubernetes:latest
+        image: container-image-registry:31000/akka-sample-cluster-kubernetes:latest
         # remove for real clusters, useful for minikube
-        imagePullPolicy: Never
+        # imagePullPolicy: Never
         readinessProbe:
           httpGet:
             path: /ready
